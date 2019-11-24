@@ -3,7 +3,7 @@ using namespace std;
 
 class Enemy{
 	protected:
-		float attackPower;
+		int attackPower;
 	public:
 		virtual void  attack()=0;
 
@@ -11,7 +11,7 @@ class Enemy{
 class Ninja: public Enemy{
 	public:
 		void attack()
-		{cout << "i am a ninja, ninj chop! -" <<endl;}
+		{cout << "i am a ninja, ninja chop! -" <<endl;}
 };
 
 class Monster: public Enemy{
